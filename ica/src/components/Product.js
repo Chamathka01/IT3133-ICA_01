@@ -1,4 +1,5 @@
 import '../assets/CSS/layout.css';
+import React, { useState } from 'react';
 export default function Product(){
     
     return(
