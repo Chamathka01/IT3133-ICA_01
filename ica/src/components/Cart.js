@@ -1,6 +1,6 @@
 import React from 'react';
 export default function Cart() {
-    
+    const total = cartItems.reduce((acc, item) => acc + item.price * item.qty, 0);
     return (
         <div className="table-container">
             <h4 className="card-title">Cart</h4>
