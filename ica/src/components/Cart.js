@@ -1,5 +1,5 @@
 import React from 'react';
-export default function Cart() {
+export default function Cart({ cartItems }) {
     const total = cartItems.reduce((acc, item) => acc + item.price * item.qty, 0);
     return (
         <div className="table-container">
@@ -23,7 +23,7 @@ export default function Cart() {
                 }
                 <tr>
                     <td >Grand Total : </td>
-                    <td colSpan={2}>Grand Total</td>
+                    <td colSpan={2}>{total}</td>
                 </tr>
             </table>
            
